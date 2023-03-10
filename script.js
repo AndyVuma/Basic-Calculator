@@ -10,6 +10,18 @@ function appendToResult(val) {
   function clearResult() {
     document.getElementById('result').value = '';
   }
+
+
+  function calculateResult() {
+    var result = $('#result').val();
+    try {
+      result = eval(result.replace(/[^-()\d/*+.]/g, ''));
+      $('#result').val(result);
+    } catch (e) {
+      alert('Invalid mathematical expression');
+    }
+  }
+  
   
 // Add event listener for 'keydown' event on document object
 document.addEventListener('keydown', handleKeyDown);
@@ -107,6 +119,7 @@ function handleKeyDown(event) {
       break;
   }
 }
+
 
 
 
