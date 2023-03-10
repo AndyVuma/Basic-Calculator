@@ -42,6 +42,7 @@ button:hover {
 button:active {
   background-color: #2aabd2;
   border-color: #2aabd2;
+  
 }
 
 button {
@@ -49,3 +50,20 @@ button {
 }
 
 
+button#equals {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  
+  border-right-width: 20px;
+  size: 15px;
+}
+
+button#equals:hover {
+  background-color: #449d44;
+  border-color: #449d44;
+}
+
+button#equals:active {
+  background-color: #398439;
+  border-color: #398439;
+}
